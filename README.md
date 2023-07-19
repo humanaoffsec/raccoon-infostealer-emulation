@@ -6,7 +6,9 @@ Licensed under the Creative Commons Attribution-NonCommercial 4.0 International 
 :warning: This program was written to test organzations' environments with behavior that closely mimics a popular infostealer. Any use beyond authorized, controlled security testing is expressly forbidden.
 
 Credits:
+
 @nbaertch
+
 @BCHarrell
 
 ## Some Background
@@ -47,11 +49,11 @@ The implant is a one-shot execution cycle that requires a server from which to o
 
 :bangbang: **You should consider changing the following variables in `vars.cpp` before compiling.** All strings are RC4 encrypted and then Base64 encoded. There's a small helper script included in this repo to aid with this, or you can easily use CyberChef.
 
-* g_C2RC4Key[] -- This is the key for C2 server decryption
+* g_C2RC4Key -- This is the key for C2 server decryption
 * g_localLowPath -- Raccoon uses local low if it can be resolved, this has a fallback folder (default: c:\temp)
 * g_stagingFolder -- Folder name to stage files and downloaded DLLs (default: 202306)
 * g_server -- Server IP/hostname (default is "localhost" --> L"TSrVhxZCJ4aH")
-* int g_port -- Default 80
+* g_port -- Default 80
 * g_token -- Used for comms with the server (default:"placeholder")
 
 You can change other variables, such as the internal encryption key, but that will lead to additional work. We've included the original strings so you can check the values in CyberChef for safety if desired.
